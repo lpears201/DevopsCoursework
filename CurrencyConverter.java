@@ -1,6 +1,6 @@
 import java.util.*;
 import java.text.DecimalFormat;
-// test
+
 public class CurrencyConverter {
 
         public static void main(String[] args) {
