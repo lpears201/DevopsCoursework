@@ -3,8 +3,14 @@ javac CurrencyConverter.java
 
 input1="1 pounds"
 actual1=$(java CurrencyConverter $input1)
+expected1="1.0 Pounds = 2.36 Dollars
+1.0 Pound = 1.19 Euros
+Thank you for using the converter."
 input2="1 pounds"
 actual2=$(java CurrencyConverter $input2)
+expected2="1.0 Pounds = 2.36 Dollars
+1.0 Pound = 1.19 Euros
+Thank you for using the converter."
 input3="1 pounds"
 actual3=$(java CurrencyConverter $input3)
 expected3="1.0 Pounds = 2.36 Dollars
@@ -51,17 +57,22 @@ expected11="1.0 Dollars = 0.74 Pounds
 1.0 Dollars = 0.88 Euros
 Thank you for using the converter."
 
-if [[ "$input1" == "$actual1" ]]; then
-    echo "Test failed"
-else
+if [[ "$expected3" == "$actual3" ]]; then
     echo "Test passed"
+else
+    echo "Test failed"
+fi
 
 if [[ "$expected3" == "$actual3" ]]; then
     echo "Test passed"
 else
     echo "Test failed"
-    echo "$expected3"
-    echo "$actual3"
+fi
+
+if [[ "$expected3" == "$actual3" ]]; then
+    echo "Test passed"
+else
+    echo "Test failed"	
 fi
 
 if [[ "$expected4" == "$actual4" ]]; then
@@ -111,3 +122,4 @@ if [[ "$expected11" == "$actual11" ]]; then
 else
     echo "Test failed"
 fi
+
