@@ -3,38 +3,38 @@ javac CurrencyConverter.java
 
 input3="1 pounds"
 actual3="java CurrencyConverter $input1"
-expected3="1 Pounds = 1.36 Dollars
-1 Pounds = 1.19 Euros
+expected3="1.0 Pounds = 1.36 Dollars
+1.0 Pounds = 1.19 Euros
 Thank you for using the converter."
 input4="1 Pounds"
 actual4="java CurrencyConverter $input1"
-expected4="1 Pounds = 1.36 Dollars
-1 Pounds = 1.19
+expected4="1.0 Pounds = 1.36 Dollars
+1.0 Pounds = 1.19
 Euros Thank you for using the converter."
 input5="1 POUNDS"
 actual5="java CurrencyConverter $input1"
-expected5="1 Pounds = 1.36 Dollars
-1 Pounds = 1.19 Euros
+expected5="1.0 Pounds = 1.36 Dollars
+1.0 Pounds = 1.19 Euros
 Thank you for using the converter."
 input6="1 euros"
 actual6="java CurrencyConverter $input1"
-expected6="1 Euros = 1.31 Dollars
-1 Euros = 0.84 Pounds
+expected6="1.0 Euros = 1.31 Dollars
+1.0 Euros = 0.84 Pounds
 Thank you for using the converter."
 input7="1 Euros"
 actual7="java CurrencyConverter $input1"
-expected7="1 Euros = 1.31 Dollars
-1 Euros = 0.84 Pounds
+expected7="1.0 Euros = 1.31 Dollars
+1.0 Euros = 0.84 Pounds
 Thank you for using the converter."
 input8="1 EUROS"
 actual8="java CurrencyConverter $input1"
-expected9="1 Euros = 1.31 Dollars
-1 Euros = 0.84 Pounds
+expected9="1.0 Euros = 1.31 Dollars
+1.0 Euros = 0.84 Pounds
 Thank you for using the converter."
 input10="1 dollars"
 actual10="java CurrencyConverter $input1"
-expected10="1 Dollars = 0.74 Pounds
-1 Dollars = 0.88 Euros
+expected10="1.0 Dollars = 0.74 Pounds
+1.0 Dollars = 0.88 Euros
 Thank you for using the converter."
 input11="1 Dollars"
 actual11="java CurrencyConverter $input1"
@@ -43,10 +43,9 @@ expected11="1.0 Dollars =  0.74 Pounds
 Thank you for using the converter."
 input12="1 DOLLARS"
 actual12="java CurrencyConverter $input1"
-expected12="1 Dollars =  0.74 Pounds
-1 Dollars = 0.88 Euros
+expected12="1.0 Dollars =  0.74 Pounds
+1.0 Dollars = 0.88 Euros
 Thank you for using the converter."
-
 
 if [[ "$expected3" == "$actual3" ]]; then
     echo "Test passed"
