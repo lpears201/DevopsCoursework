@@ -10,7 +10,7 @@ expected="1 Pound = 1.36 Dollars 1 Pound = 1.19 Euros Thank you for using the co
 if [[ "$expected" == "$actual" ]]; then
     echo "Strings are equal."
 else
-    echo "Strings are not equal."
+    echo 'let fails++'
 fi
 
 exit$fails
