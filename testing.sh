@@ -3,7 +3,7 @@ javac CurrencyConverter.java
 
 input1="1 pounds"
 actual1=$(java CurrencyConverter $input1)
-input2="1 pounds"
+input2="pounds 1"
 actual2=$(java CurrencyConverter $input2)
 expected2="1.0 Pounds = 2.36 Dollars
 1.0 Pound = 1.19 Euros
