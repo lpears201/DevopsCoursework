@@ -53,6 +53,21 @@ actual11=$(java CurrencyConverter $input11)
 expected11="1.0 Dollars = 0.74 Pounds
 1.0 Dollars = 0.88 Euros
 Thank you for using the converter."
+input12="1 euros"
+actual12=$(java CurrencyConverter $input12)
+expected12="1.0 Euros = 1.13 Dollars
+1.0 Euros = 0.84 Pounds
+Thank you for using the converter."
+input13="1 pounds"
+actual13=$(java CurrencyConverter $input13)
+expected13="1.0 Pounds = 1.36 Dollars
+1.0 Pound = 1.19 Euros
+Thank you for using the converter."
+input14="1 dollars"
+actual14=$(java CurrencyConverter $input14)
+expected14="1.0 Dollars = 0.74 Pounds
+1.0 Dollars = 0.88 Euros
+Thank you for using the converter."
 
 if [[ "$input1" == "" ]]; then
     echo "Test failed"
@@ -69,7 +84,7 @@ fi
 if [[ "$expected3" == "$actual3" ]]; then
     echo "Test passed"
 else
-    echo "Test failed"	
+    echo "Test failed"
 fi
 
 if [[ "$expected4" == "$actual4" ]]; then
@@ -120,3 +135,19 @@ else
     echo "Test failed"
 fi
 
+if [[ "$expected12" == "$actual12" ]]; then
+    echo "Test passed"
+else
+    echo "Test failed"
+fi
+if [[ "$expected13" == "$actual13" ]]; then
+    echo "Test passed"
+else
+    echo "Test failed"
+fi
+
+if [[ "$expected14" == "$actual14" ]]; then
+    echo "Test passed"
+else
+    echo "Test failed"
+fi
