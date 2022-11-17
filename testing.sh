@@ -60,7 +60,7 @@ else
     echo "Test passed"
 fi
 
-if [[ "$expected3" == ^[0-9] ]]; then
+if [[ "$expected3" =~ ^[0-9] ]]; then
     echo "Test passed"
 else
     echo "Test failed"
