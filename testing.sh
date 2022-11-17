@@ -55,7 +55,7 @@ if [[ "$expected3" == "$actual3" ]]; then
 else
     echo "Test failed"
     echo "$expected3"
-    echo "actual3"
+    echo "$actual3"
 fi
 
 if [[ "$expected4" == "$actual4" ]]; then
