@@ -13,4 +13,5 @@ else
     echo 'let fails++'
 fi
 
-exit$fails
+echo "Fails ${fail}"
+exit
