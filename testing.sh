@@ -51,7 +51,7 @@ expected11="1.0 Dollars = 0.74 Pounds
 1.0 Dollars = 0.88 Euros
 Thank you for using the converter."
 
-if [[ "$input1" == "" ]]; then
+if [[ "$input1" == "$actual1" ]]; then
     echo "Test failed"
 else
     echo "Test passed"
