@@ -75,7 +75,7 @@ else
     echo "Test passed"
 fi
 
-if [[ "$expected3" =~ ^[0-9] ]]; then
+if [[ "$expected2" == "$actual2" ]]; then
     echo "Test passed"
 else
     echo "Test failed"
